@@ -1,0 +1,16 @@
+{
+ "name": "PageColours",
+ "version": "0.1.0",
+ "description": "Allows custom colours for pages in real-time visitor log. Very experimental, use at your own peril.",
+ "theme": false,
+ "require": {
+    "piwik": ">=2.9.0-b7"
+ },
+ "authors": [
+     {
+         "name": "Dominic Mulligan",
+         "email": "",
+         "homepage": "http://dominicmulligan.com"
+     }
+ ]
+}

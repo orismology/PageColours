@@ -1,0 +1,10 @@
+table.adminTable[data-pluginname="PageColours"] .ui-inline-help{
+ white-space: pre-line;
+ text-align: left;
+ padding-top:0;
+}
+
+table.adminTable[data-pluginname="PageColours"] .form-description{
+ white-space: pre-line;
+ padding-right: 10px;
+}

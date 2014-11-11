@@ -1,0 +1,3 @@
+#visitsLive .settings img[src*='plugins/Live/images/file'] {
+     content:url(../assets/icons/blue.png);
+}
