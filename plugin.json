@@ -4,7 +4,7 @@
  "description": "Allows custom colours for pages in real-time visitor log. Very experimental, use at your own peril.",
  "theme": false,
  "require": {
-    "piwik": ">=2.9.0-b7"
+    "piwik": ">=2.8.0"
  },
  "authors": [
      {
