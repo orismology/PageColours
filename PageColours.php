@@ -45,7 +45,7 @@ public function getListHooksRegistered()
     
     
     $css = 
-'#visitsLive .settings img[src*=\'plugins/Live/images/file\'] {
+'#visitsLive .settings a img[src*=\'plugins/Live/images/file\'] {
      content:url(../assets/icons/'.$default.');
 }
 ';
@@ -54,7 +54,7 @@ public function getListHooksRegistered()
 	
 	if ($rule[0] != "=") { $rule[0]=substr($rule[0],0,1)."="; }
 	
-	$cssrule = '#visitsLive .settings a[href'.$rule[0].'"'.$match.'"] img{
+	$cssrule = '#visitsLive .settings a[href'.$rule[0].'"'.$match.'"] img[src*=\'plugins/Live/images/file\']{
      content:url(../assets/icons/'.$rule[1].');
 }
 ';

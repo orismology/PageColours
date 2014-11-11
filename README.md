@@ -40,6 +40,8 @@ Eventually, this should evolve to the point where it is stable and easy to use, 
 
 ## Changelog
 
+0.1.1 Fixed bug: Page colours will no longer overwrite icons for goals, events or downloads. You will need to re-save plugin settings in order to re-generate the override stylesheet.
+
 0.1.0 First Version
 
 ## Support
