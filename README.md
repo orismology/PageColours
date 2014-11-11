@@ -6,6 +6,28 @@ Replaces the rainbow of colourful folder icons in Piwik's "Visitors in Real-time
 
 Very experimental.
 
+If you decide to use it, here's some things you need to know:
+
+* The plugin needs to be installed to /plugins/PageColours (if you download as a zip from GitHub it will download as PageColours-master)
+* You can add additional icons to /plugins/PageColours/assets/icons
+* The custom page colours setting should be a JSON encoded string of the following format:
+
+    {
+    "string to match": [ "match type", "colour" ],
+    "second string": [ "match type", "colour" ]
+    }
+    
+So, to colour all blog pages green and all docs pages red...
+
+    {
+    "/blog/": [ "*", "green.png" ],
+    "/docs/": [ "*", "red.png" ]
+    }
+    
+The match types are explained on the plugin settings page.
+
+This syntax is subject to change - yet another reason why you probably shouldn't use this.
+
 ## FAQ
 
 __Should I Use This?__
