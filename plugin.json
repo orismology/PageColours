@@ -1,6 +1,7 @@
 {
  "name": "PageColours",
  "version": "0.1.1",
+ "homepage": "https://github.com/orismology/PageColours/"
  "description": "Allows custom colours for pages in real-time visitor log. Very experimental, use at your own peril.",
  "theme": false,
  "require": {
