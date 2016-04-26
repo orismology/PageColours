@@ -4,25 +4,29 @@
 
 Replaces the rainbow of colourful folder icons in Piwik's "Visitors in Real-time" widget with colourful folder icons that match user-defined url patterns.
 
-Very experimental.
+Considered in early beta - not stable, but it hasn't broken anything yet.
 
 If you decide to use it, here's some things you need to know:
 
 * The plugin needs to be installed to /plugins/PageColours (if you download as a zip from GitHub it will download as PageColours-master)
 * You can add additional icons to /plugins/PageColours/assets/icons
 * The custom page colours setting should be a JSON encoded string of the following format:
-
+    
+```javascript
     {
     "string to match": [ "match type", "colour" ],
     "second string": [ "match type", "colour" ]
     }
+```
     
 So, to colour all blog pages green and all docs pages red...
 
+```javascript
     {
     "/blog/": [ "*", "green.png" ],
     "/docs/": [ "*", "red.png" ]
     }
+```
     
 The match types are explained on the plugin settings page.
 
@@ -39,6 +43,8 @@ Eventually, this should evolve to the point where it is stable and easy to use, 
 
 
 ## Changelog
+
+0.1.2 Minor language and style changes
 
 0.1.1 Fixed bug: Page colours will no longer overwrite icons for goals, events or downloads. You will need to re-save plugin settings in order to re-generate the override stylesheet.
 
