@@ -50,7 +50,8 @@ class Settings extends \Piwik\Plugin\Settings
         $this->defaultColour->type  = static::TYPE_STRING;
         $this->defaultColour->uiControlType = static::CONTROL_SINGLE_SELECT;
         $this->defaultColour->availableValues  = array_diff(scandir('plugins/PageColours/assets/icons/'), array('..', '.'));;
-		$this->defaultColour->inlineHelp = 'Add new colours by adding files to: /piwik/plugins/PageColours/assets/icons/';
+		$this->defaultColour->inlineHelp = 
+'Add new colours by adding files to: /piwik/plugins/PageColours/assets/icons/';
         $this->addSetting($this->defaultColour);
     }
 
@@ -59,7 +60,7 @@ class Settings extends \Piwik\Plugin\Settings
         $this->customColours = new SystemSetting('customColours', 'Custom page colours');
         $this->customColours->readableByCurrentUser = true;
         $this->customColours->uiControlType = static::CONTROL_TEXTAREA;
-        $this->customColours->description   = 
+        $this->customColours->inlineHelp = 
 'A JSON encoded string of custom page colours.
 Use the following format:
         
@@ -72,8 +73,9 @@ Use the following format:
         "match type",
         "colour"
     ]
-}';
-        $this->customColours->inlineHelp = 'Match Types:
+}
+
+Match Types:
 = matches url exatly (including http:// and domain)
 ~ matches any of a whitespace-separated list of urls exactly
 ^ matches urls that start with string
